@@ -24,6 +24,8 @@ Collection of rust code meant to be added to our source code.
 
 Needs to add under depencies in `Cargo.toml`.
 
+[Repo](https://crates.io/)
+
 ## Owenrship & Borrowing
 
 - Each value in Rust has an owner.
