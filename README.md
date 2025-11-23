@@ -16,6 +16,7 @@ cargo build # build the cargo project (to run from the dir)
 cargo run # to run the project, it also recompiles if needed  
 cargo check # to quickly check if the projects compiles without producin gthe executable
 cargo build --release # slower compile time but faster run time
+cargo doc --open # to open the doc of the crates in dependencies
 ```
 ### Crate
 
