@@ -12,6 +12,7 @@ rustup update
 rustc my_program.rs # Compile
 rustfmt my_program.rs # Format in place 
 cargo new hello_cargo # Create new project with cargo
+cargo build # build the cargo project (to run from the dir)
 ```
 
 
