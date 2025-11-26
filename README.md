@@ -5,7 +5,12 @@
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 rustup update
 ```
+Or on Linux
 
+```Bash
+sudo apt install rustup
+rustup default stable
+```
 ## Toolchain 
 
 ```Bash
@@ -15,6 +20,7 @@ cargo new hello_cargo # Create new project with cargo
 cargo build # build the cargo project (to run from the dir)
 cargo run # to run the project, it also recompiles if needed  
 cargo check # to quickly check if the projects compiles without producin gthe executable
+cargo clean # to clean the crate
 cargo build --release # slower compile time but faster run time
 cargo doc --open # to open the doc of the crates in dependencies
 ```
