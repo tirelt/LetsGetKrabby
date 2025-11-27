@@ -1,25 +1,21 @@
-fn merge_sort(v: Vec<i32>){
-    match v.len() {
-        0 => (),
-        1 => (),
-        2 => {
-            if v[0]>v[1]{
-                let temp = v[1];
-                v[1] = v[0];
-                v[0] = temp;
-            }
-        },
-        n => {
-            let v1 = &v[0..n/2].copied();
-            let v2 = v[n/2..n].copy();
-            println!("{n}");
-            v
-        }
-    }
-}
-
+use std::io;
+use std::collections::HashMap;
 fn main() {
-    let my_vec = vec![1,3,5,3,7,3,7,2,9];
-    let sorted_vec = merge_sort(my_vec);
-    println!("{sorted_vec:?}")
+    println!("hello");
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    let words: Vec<&str> = input.split_whitespace().collect();
+    let mut v: Vec<i32> = words.iter().map(|x| x.parse().unwrap()).collect();
+    v.sort();
+    let median = v[v.len()/2];
+    let mut count_map: HashMap<i32,i32> = HashMap::new();
+    println!("The median is {median:?}");
+    for el in v{
+        let el_ref = count_map.entry(el).or_insert(0);
+        *el_ref += 1;
+    }
+    println!("Count map\n:{count_map:?}");
+
 }
