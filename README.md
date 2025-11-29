@@ -1,5 +1,8 @@
 # Let's Get Krabby
 
+Ressources:
+- [The Book](https://doc.rust-lang.org/book)
+
 ## Install 
 ```bash
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
@@ -23,6 +26,7 @@ cargo check # to quickly check if the projects compiles without producin gthe ex
 cargo clean # to clean the crate
 cargo build --release # slower compile time but faster run time
 cargo doc --open # to open the doc of the crates in dependencies
+cargo test # c.f. Chapter 11
 ```
 ### Crate
 
