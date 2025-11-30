@@ -44,7 +44,16 @@ Then in `settings.json` specify path to Cargo.toml
 On the file click the debug button above the main function. 
 
 We couldn't make the debuger pretty print with the usual `launch.json` VSCode debug.
+ 
+### Auto format on save 
 
+In `settings.json`
+```Json
+    "[rust]": {
+            "editor.defaultFormatter": "rust-lang.rust-analyzer",
+            "editor.formatOnSave": true
+    },
+```
 ### Crate
 
 Collection of rust code meant to be added to our source code.
