@@ -28,6 +28,22 @@ cargo build --release # slower compile time but faster run time
 cargo doc --open # to open the doc of the crates in dependencies
 cargo test # c.f. Chapter 11
 ```
+
+### Debug 
+
+In VSCode install the extensionh `CodeLLDB` and `rust-analyzer`.
+
+Then in `settings.json` specify path to Cargo.toml
+```json
+    "rust-analyzer.linkedProjects": [
+        "${workspaceFolder}/Cargo.toml", // if the project is at the root 
+        "${workspaceFolder}/[PATH]/Cargo.toml", // otherwise 
+    ],
+```
+On the file click the debug button above the main function. 
+
+We couldn't make the debuger pretty print with the usual `launch.json` VSCode debug.
+
 ### Crate
 
 Collection of rust code meant to be added to our source code.
