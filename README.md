@@ -26,6 +26,7 @@ cargo check # to quickly check if the projects compiles without producin gthe ex
 cargo clean # to clean the crate
 cargo build --release # slower compile time but faster run time
 cargo doc --open # to open the doc of the crates in dependencies
+cargo fmt # to run to the auto formater
 cargo test # c.f. Chapter 11
 ```
 
