@@ -14,6 +14,13 @@ Or on Linux
 sudo apt install rustup
 rustup default stable
 ```
+
+## Doc 
+
+```Bash
+rustup doc # for all the doc available locally
+rustup doc --book # e.g. for The Book
+```
 ## Toolchain 
 
 ```Bash
