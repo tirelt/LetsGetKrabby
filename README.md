@@ -63,7 +63,13 @@ In `settings.json`
 ```
 ### Crate
 
-Collection of rust code meant to be added to our source code.
+A crate is the smallest amount of code that the Rust compiler considers at a time. This is something that can be compiled.
+
+A crate can come in one of two forms: a binary crate (canb be executed, it has a main function) or a library crate (just implements functions). 
+
+A package is a bundle of one or more crates that provides a set of functionality. A package contains a Cargo.toml file that describes how to build those crates. A package can contain as many binary crates as you like, but at most only one library crate
+
+The root crate is `src/main.rs` for a binary crate and `src/lib.rs` for a library crate. A package can have multiple binary crates by placing files in the src/bin directory.
 
 Needs to add under depencies in `Cargo.toml`.
 
