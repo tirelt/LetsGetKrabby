@@ -61,6 +61,15 @@ In `settings.json`
             "editor.formatOnSave": true
     },
 ```
+
+### Specify `Cargo.toml` dir 
+
+In `settings.json`
+```Json
+    "rust-analyzer.linkedProjects": [
+            "${workspaceFolder}/Cargo.toml",
+        ],
+```
 ### Crate
 
 A crate is the smallest amount of code that the Rust compiler considers at a time. This is something that can be compiled.
